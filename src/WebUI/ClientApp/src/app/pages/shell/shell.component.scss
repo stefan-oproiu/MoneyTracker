@@ -1,0 +1,28 @@
+mat-drawer-container {
+  height: 100vh;
+}
+
+$sidenav-padding: 20;
+
+.sidenav {
+  padding: #{$sidenav-padding}px 0;
+  height: calc(100% - #{2 * $sidenav-padding}px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-emoji {
+  font-size: 40px;
+  text-align: center;
+}
+
+.active-link {
+  background-color: #efefef;
+}
+
+[mat-button] {
+  border-radius: 0;
+  width: 100%;
+}

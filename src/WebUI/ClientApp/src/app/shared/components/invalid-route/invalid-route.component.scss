@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+$icon-size: 80px;
+
+section {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  mat-icon {
+    font-size: $icon-size;
+    width: $icon-size;
+    height: $icon-size;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}

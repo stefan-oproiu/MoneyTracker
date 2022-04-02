@@ -1,0 +1,17 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened>
+    <div class="sidenav">
+      <div class="links">
+        <h1 class="header-emoji">🤑</h1>
+        <a mat-button [routerLink]="ME_PATH" routerLinkActive="active-link">Money Tracker</a>
+      </div>
+      <a mat-button (click)="authService.logout()">
+        <mat-icon>logout</mat-icon>
+        <span> Logout</span>
+      </a>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
